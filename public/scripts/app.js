@@ -95,7 +95,7 @@ $(function () {
     }
   }
 
-  renderTweets(data);
+
 
   //prevent page from changing after submitting new tweet and storing data in new var
   let $form = $('#submit');
@@ -105,6 +105,17 @@ $(function () {
     return formData
   })
 
+  function loadTweets() {
+    $.get('/tweets')
+    .done(function(result) {
+      $('.tweet-container').empty()
+      renderTweets(result)
+    })
+    .fail(function(error) {
+      console.error(error)
+    })
+  }
 
+  loadTweets()
 
 })
