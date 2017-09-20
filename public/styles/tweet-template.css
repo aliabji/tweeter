@@ -1,4 +1,4 @@
-.tweet-container {
+.tweet-container article {
   border-radius: 5px;
   background-color: #FFFFFF;
   width: 80%;
@@ -39,10 +39,10 @@
   width: 100%;
 }
 
-
 .tweet-container div p {
   text-align: center;
   padding-left: 13px;
+  padding-right: 13px;
   background-color: white;
   height: 40px;
   position: relative;
@@ -61,7 +61,6 @@
 .fa {
   opacity: 0;
 }
-
 
 .container:hover .fa-heart {
   float: right;
@@ -84,14 +83,10 @@
   opacity: 100;
 }
 
-.container:hover .tweet-container{
+.tweet-container:hover article {
   border: 1px solid #747171
 }
 
 .container:hover header > h2 {
   font-weight: bolder;
-}
-
-.posted-tweets {
-  
 }
