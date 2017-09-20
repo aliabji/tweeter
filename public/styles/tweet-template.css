@@ -40,6 +40,15 @@
   width: 100%;
 }
 
+
+.posted-tweets div p {
+  text-align: center;
+  padding-left: 13px;
+  background-color: white;
+  height: 40px;
+  position: relative;
+}
+
 .posted-tweets footer p {
   width: 100%;
   height: 30px;
@@ -50,12 +59,30 @@
   font-size: smaller;
 }
 
-.posted-tweets div p {
-  text-align: center;
-  padding-left: 13px;
-  background-color: white;
-  height: 40px;
-  position: relative;
+.fa {
+  opacity: 0;
+}
+
+
+.container:hover .fa-heart {
+  float: right;
+  padding-right: 8px;
+  color: #0084FF;
+  opacity: 100;
+}
+
+.container:hover .fa-retweet {
+  float: right;
+  padding-right: 5px;
+  color: #0084FF;
+  opacity: 100;
+}
+
+.container:hover .fa-flag {
+  float: right;
+  padding-right: 5px;
+  color: #0084FF;
+  opacity: 100;
 }
 
 .container:hover .posted-tweets{
