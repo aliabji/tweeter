@@ -1,7 +1,6 @@
 .new-tweet {
   height: 160px;
   background-color: rgba(103, 109, 105, 0.12);
-  z-index: 1000;
   border-radius: 5px;
   padding: 0.5px 8px;
   width: 80%;
