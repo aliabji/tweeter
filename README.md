@@ -19,3 +19,9 @@ This repository is the starter code for the project: Students will fork and clon
 - body-parser
 - chance
 - mongodb
+
+## Screenshots
+
+!["Screenshot of the compose tweet section hidden"](https://github.com/aliabji/tweeter/blob/master/docs/composeHidden.png)
+!["Screensot of the compose tweet section showing with text showing the character counter functioning"](https://github.com/aliabji/tweeter/blob/master/docs/counterSample.png)
+!["Screenshot of the hover state"](https://github.com/aliabji/tweeter/blob/master/docs/hoverState.png)
