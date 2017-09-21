@@ -6,11 +6,11 @@ $(document).ready(function(textArea) {
   $('.tweet-text').keyup(function () {
     totalChars = this.value.length
     $('.counter').html(140 - totalChars)
-    let number = parseInt($('.counter').text());
+    let number = parseInt($('.counter').text())
     if (number < 0) {
-      $('.counter').addClass('red');
+      $('.counter').addClass('red')
     } else if (number >= 0) {
-      $('.counter').removeClass('red');
-    };
-  });
-});
+      $('.counter').removeClass('red')
+    }
+  })
+})

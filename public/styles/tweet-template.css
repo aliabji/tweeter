@@ -85,7 +85,7 @@
 }
 
 .tweet-container:hover article {
-  border: 1px solid #747171
+  border: 1px solid #747171;
 }
 
 .container:hover header > h2 {
