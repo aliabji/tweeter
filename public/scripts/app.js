@@ -58,6 +58,12 @@ $(function () {
     return div.innerHTML;
   }
 
+  $('#toggle').click(function() {
+    $('.new-tweet').toggle('slow', function() {
+      $('.tweet-text').select()
+    })
+  })
+
   //function to input the tweet data into the tweet template
   const createTweetElement = function(tweet) {
     let $tweet =    
@@ -122,7 +128,6 @@ $(function () {
   let $form = $('#submit');
   $form.on('submit', function (ev) {
     ev.preventDefault()
-    console.log($('.tweet-text').val())
     if ($('.tweet-text').val().length == 0) {
       alert("Please enter your tweet")
       return

@@ -58,7 +58,7 @@
   font-size: smaller;
 }
 
-.fa {
+.container .fa{
   opacity: 0;
 }
 
