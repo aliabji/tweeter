@@ -51,7 +51,7 @@ $(function () {
       "created_at": 1461113796368
     }
   ];
-  //form data security
+  //form data security, protect from HTML manipulation
   const escape = function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
