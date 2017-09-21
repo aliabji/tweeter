@@ -65,7 +65,11 @@ $(function () {
   })
 
   //function to input the tweet data into the tweet template
+  //also converts the millisecond string in to a legible date format
   const createTweetElement = function(tweet) {
+    let date = tweet.created_at
+    let parsedDate = new Date(parseInt(date,10));
+    
     let $tweet =    
   
       ` <article class=“posted-tweets”>
@@ -81,7 +85,7 @@ $(function () {
           </div>
 
           <footer>
-            <p>${escape(tweet.created_at)}
+            <p class="date">${escape(parsedDate)}
             <i class="fa fa-heart" aria-hidden="true"></i>
             <i class="fa fa-retweet" aria-hidden="true"></i>
             <i class="fa fa-flag" aria-hidden="true"></i>
